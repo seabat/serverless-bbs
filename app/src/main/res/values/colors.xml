@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray_50">#F5F5F5</color>
     <color name="purple_50">#EDE7F6</color>
+    <color name="mintcream">#F5FFFA</color>
+    <color name="aliceblue">#F0F8FF</color>
+    <color name="ivory">#FFFFF0</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="seashell">#FFF5EE</color>
+    <color name="lavender">#E6E6FA</color>
 </resources>
