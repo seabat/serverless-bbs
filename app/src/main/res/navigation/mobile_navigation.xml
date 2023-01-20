@@ -13,12 +13,20 @@
         <action
             android:id="@+id/action_navHome_to_bbsThreadDetail"
             app:destination="@id/bbs_thread_detail" />
+        <action
+            android:id="@+id/action_navHome_to_bbsThreadCreate"
+            app:destination="@id/bbs_thread_create" />
     </fragment>
     <fragment
         android:id="@+id/bbs_thread_detail"
         android:name="dev.seabat.android.serverlessbbs.ui.screen.bbs_thread.BbsThreadDetailFragment"
         android:label="@string/label_bbs_thread_detail"
         tools:layout="@layout/fragment_bbs_thread_detail" />
+    <fragment
+        android:id="@+id/bbs_thread_create"
+        android:name="dev.seabat.android.serverlessbbs.ui.screen.bbs_thread.BbsThreadCreateFragment"
+        android:label="@string/label_bbs_thread_create"
+        tools:layout="@layout/fragment_bbs_thread_create" />
 
     <fragment
         android:id="@+id/nav_gallery"

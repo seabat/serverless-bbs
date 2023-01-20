@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
@@ -59,6 +60,8 @@ class HomeFragment : Fragment() {
             true
         }
         R.id.action_bss_thread_add -> {
+            val bundle = Bundle()
+            this.findNavController().navigate(R.id.action_navHome_to_bbsThreadCreate, bundle)
             true
         }
         else -> super.onOptionsItemSelected(item)
