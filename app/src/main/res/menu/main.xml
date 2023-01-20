@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/action_bss_thread_add"
+        android:icon="@drawable/post_add_48px"
+        android:title="@string/action_bss_thread_add"
+        app:showAsAction="ifRoom"/>
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"

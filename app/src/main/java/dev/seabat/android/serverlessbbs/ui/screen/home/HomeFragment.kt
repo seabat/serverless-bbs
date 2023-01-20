@@ -1,9 +1,7 @@
 package dev.seabat.android.serverlessbbs.ui.screen.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -22,6 +20,11 @@ class HomeFragment : Fragment() {
 
     private lateinit var viewPageAdapter: HomeViewPagerAdapter
     private lateinit var viewPager: ViewPager2
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,6 +48,20 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.main, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.action_settings -> {
+            true
+        }
+        R.id.action_bss_thread_add -> {
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
     }
 
     private fun setupViewPager(binding: FragmentHomeBinding) {
